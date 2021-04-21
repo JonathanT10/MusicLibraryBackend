@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "title": "Test",
+    "album": "testing",
+    "artist": "Tester",
+    "genre": "testify",
+    "releaseDate": 4
+  }
+]
