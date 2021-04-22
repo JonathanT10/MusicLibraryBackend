@@ -2,13 +2,13 @@ const express = require("express");
 const { updateProduct } = require("./repository/products-repository");
 const { updateMusic } = require("./repository/music-repository");
 const repoContext = require("./repository/repository-wrapper");
-// const cors = require("cors");
+const cors = require("cors");
 const { validateProduct } = require("./middleware/products-validation");
 const { validateMusic } = require("./middleware/music-validation");
 
 const app = express();
 
-// app.use(cors());
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
 
