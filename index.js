@@ -40,7 +40,7 @@ app.put("/api/products/:id", [validateProduct], (req, res) => {
     return res.send(updateProduct);
 });
 
-app.delete("api/products/:id", (req, res) => {
+app.delete("/api/products/:id", (req, res) => {
     const id = req.params.id;
     const updatedDataSet = repoContext.products.deleteProduct(id);
     return res.send(updatedDataSet);
@@ -70,7 +70,7 @@ app.put("/api/music/:id", [validateMusic],  (req, res) => {
     return res.send(updateMusic);
 });
 
-app.delete("api/music/:id", (req, res) => {
+app.delete("/api/music/:id", (req, res) => {
     const id = req.params.id;
     const updatedDataSet = repoContext.songs.deleteSong(id);
     return res.send(updatedDataSet);
